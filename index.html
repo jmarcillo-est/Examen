@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Heladería Tutto Style PRO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header class="top">
+<h1 class="logo">🍦 Tutto Freddo</h1>
+<button class="btn" onclick="irPedido()">Ordenar</button>
+</header>
+
+
+<section class="banner">
+<h2>ENVÍO GRATIS</h2>
+<p>En todas tus compras desde $15</p>
+</section>
+
+
+<section class="pedido" id="pedido">
+<h2>Haz tu pedido</h2>
+<p>Selecciona tu local</p>
+
+
+<div class="grid">
+<div class="card" onclick="seleccionar('Angelus')">Angelus</div>
+<div class="card" onclick="seleccionar('La Corte')">La Corte</div>
+<div class="card" onclick="seleccionar('Challubamba')">Challubamba</div>
+<div class="card" onclick="seleccionar('Puertas del Sol')">Puertas del Sol</div>
+<div class="card" onclick="seleccionar('Paseo de los Cañaris')">Paseo de los Cañaris</div>
+<div class="card" onclick="seleccionar('Plaza Roma')">Plaza Roma</div>
+</div>
+
+
+<p id="local"></p>
+</section>
+
+
+<section class="menu">
+<h2>Menú</h2>
+<div class="productos">
+<div class="prod">🍨 Helado Simple - $3 <button onclick="agregar(3)">+</button></div>
+<div class="prod">🍧 Helado Doble - $5 <button onclick="agregar(5)">+</button></div>
+<div class="prod">🍦 Sundae - $7 <button onclick="agregar(7)">+</button></div>
+</div>
+<p>Total: $<span id="total">0</span></p>
+</section>
+
+
+<section class="descarga">
+<h2>Descargar menú</h2>
+<a href="menu.pdf" download class="btn">Descargar PDF</a>
+</section>
+
+
+<section class="subida">
+<h2>Subir comprobante</h2>
+</html>
